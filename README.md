@@ -5,15 +5,15 @@
 4. Create 2 more properties<br>
 **cp config/server.properties config/server1.properties**<br>
 **cp config/server.properties config/server2.properties**
-5. Change server1.properties 
-**broker.id=1
-listeners=PLAINTEXT://:9093
+5. Change server1.properties<br> 
+**broker.id=1<br>
+listeners=PLAINTEXT://:9093<br>
 log.dirs=/tmp/kafka-logs-1**
 6. Change server2.properties<br>
-**broker.id=2
-listeners=PLAINTEXT://:9094
+**broker.id=2<br>
+listeners=PLAINTEXT://:9094<br>
 log.dirs=/tmp/kafka-logs-2**
-7. Run brokers<br>
+7. Run 3 brokers<br>
 **./bin/kafka-server-start.sh config/server.properties<br>
 ./bin/kafka-server-start.sh config/server1.properties<br>
 ./bin/kafka-server-start.sh config/server2.properties**
