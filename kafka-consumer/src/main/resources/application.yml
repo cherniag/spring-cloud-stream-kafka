@@ -1,0 +1,11 @@
+kafka:
+  consumer:
+    bootstrapServers: localhost:9092
+    valueDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+    keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+    groupId: kafka-consumer-group
+    enableAutoCommit: true
+    autoCommitIntervalMs: 1000
+    sessionTimeoutMs: 30000
+
+service.message.topic.name: t_messages
