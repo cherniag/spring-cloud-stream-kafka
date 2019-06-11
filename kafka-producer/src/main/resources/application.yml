@@ -4,5 +4,6 @@ kafka:
     acks: all
     valueSerializer: org.apache.kafka.common.serialization.StringSerializer
     keySerializer: org.apache.kafka.common.serialization.StringSerializer
+#    transactionalId: abcdef
 
 service.message.topic.name: t_messages

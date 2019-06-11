@@ -10,4 +10,5 @@ public class KafkaConfig {
     private String acks;
     private String valueSerializer;
     private String keySerializer;
+    private String transactionalId;
 }

@@ -21,6 +21,7 @@ public class Context {
         properties.setProperty(ProducerConfig.ACKS_CONFIG, kafkaConfig.getAcks());
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, kafkaConfig.getKeySerializer());
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, kafkaConfig.getValueSerializer());
+//        properties.setProperty(ProducerConfig.TRANSACTIONAL_ID_CONFIG, kafkaConfig.getTransactionalId());
         return new KafkaProducer(properties);
     }
 }
