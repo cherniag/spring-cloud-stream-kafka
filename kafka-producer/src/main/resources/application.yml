@@ -1,0 +1,8 @@
+kafka:
+  producer:
+    bootstrapServers: localhost:9092
+    acks: all
+    valueSerializer: org.apache.kafka.common.serialization.StringSerializer
+    keySerializer: org.apache.kafka.common.serialization.StringSerializer
+
+service.message.topic.name: t_messages
